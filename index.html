@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="Assets/style.css" class="rel">
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <header class="row">
+        <div class="col"><h1>Welcome to the Weather!</h1>
+        </div>
+    </header>
+    
+    <aside class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 cities">
+                <input type="text" id="search-box" placeholder="Search for a city">
+                <div id="search-button" class="btn btn-secondary"><i class="fa fa-search">Click to search</i>
+                </div>
+
+                <div id="city-output">
+                </div>
+
+            </div>
+
+            <div class="col-md-10 weather-data">
+                <div class="row">
+                    <div class="col">
+                        <div class="card main-display" style="width: 100; height: 100%; border:2px;">
+                            <div class="card-body">
+                                <h2 class="card-title">
+                                    <span id="city">City Name</span>
+                                    <span id="date">Date</span>
+                                </h2>
+                                <p class="card-text">Temperature <span id="temperature"></span></p>
+                                <p class="card-text">UV Index <span id="uv"></span></p>
+                                <p class="card-text">Wind Speed <span id="windspeed"></span></p>
+                                <p class="card-text">Humidity <span id="humidity"></span></p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row forecast">
+                    <div class="col">
+                        <div class="card" style="width: 100%; height: 100%; border: 2px;">
+                            <div class="card-body">
+                                <h3 class="card-title">Forecast</h3>
+                                <div id="forecast">
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </aside>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="script.js"></script>
+
+</html>
