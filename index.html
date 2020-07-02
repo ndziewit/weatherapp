@@ -1,70 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="Assets/style.css" class="rel">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+    <link rel="stylesheet" href="Assets/style.css">
     <title>Weather Dashboard</title>
-</head>
-<body>
-    <header class="row">
-        <div class="col"><h1>Welcome to the Weather!</h1>
-        </div>
-    </header>
-    
-    <aside class="container-fluid">
+  </head>
+  <body>
+    <main class="container-fluid">
         <div class="row">
             <div class="col-md-2 cities">
-                <input type="text" id="search-box" placeholder="Search for a city">
-                <div id="search-button" class="btn btn-secondary"><i class="fa fa-search">Click to search</i>
-                </div>
-
-                <div id="city-output">
-                </div>
-
+                <h3>Search for a City</h3>
+                <input type="text" id="search-box" placeholder="Type a city name"><div id="search-button" class="btn btn-secondary"><i>Search</i></div>
+                <div id="past-cities"></div>
+                
             </div>
 
-            <div class="col-md-10 weather-data">
+            <div class="col-md-10 weather-box">
                 <div class="row">
                     <div class="col">
-                        <div class="card main-display" style="width: 100; height: 100%; border:2px;">
+                        <div class="card main-display" style="width: 100%; height:100%; border:0;">
                             <div class="card-body">
-                                <h2 class="card-title">
-                                    <span id="city">City Name</span>
-                                    <span id="date">Date</span>
-                                </h2>
-                                <p class="card-text">Temperature <span id="temperature"></span></p>
-                                <p class="card-text">UV Index <span id="uv"></span></p>
-                                <p class="card-text">Wind Speed <span id="windspeed"></span></p>
-                                <p class="card-text">Humidity <span id="humidity"></span></p>
-
+                              <h1 class="card-title"><span id="city">City</span></h1>
+                              <h3 class="card-text>"><span id="date"></span></h3>
+                              <img id="icon">
+                              <h3 class="card-text">Temp: <span id="temp"></span></h3>
+                              <h3 class="card-text">Humidity: <span id="humidity"></span></h3>
+                              <h3 class="card-text">Wind Speed: <span id="wind"></span></h3>
+                              <h3 class="card-text">UV Index: <span id="uv-index"></span></h3>
                             </div>
-
-                        </div>
+                          </div>
                     </div>
                 </div>
 
-                <div class="row forecast">
-                    <div class="col">
-                        <div class="card" style="width: 100%; height: 100%; border: 2px;">
-                            <div class="card-body">
-                                <h3 class="card-title">Forecast</h3>
-                                <div id="forecast">
-
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
+                <div class="row"><h2>Five Day Forecast</h2>
                 </div>
-            </div>
+                <div class="row" id="five-day">
+         </div>
+    </main>
 
-        </div>
-    </aside>
-</body>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="script.js"></script>
-
+    
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="Assets/script.js"></script>
 </html>
