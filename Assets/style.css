@@ -1,0 +1,76 @@
+* {
+    font-family: 'MuseoModerno', sans-serif;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(255,146,146,0.4) 0%, rgba(250,65,65,0.4) 19%, rgba(0,131,255,0.4) 100%);
+}
+
+.searched-city {
+    background-color: rgba(0, 0, 0, 0.1);
+    align-content: center;
+    margin-bottom: 20px;
+    margin-left: 5px;
+}
+
+header {
+    text-align: center;
+    font-size: 40px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.1);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#five-day-header {
+    background-color: rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    margin-left: 20px;
+    margin-right: 50px;
+}
+
+#five-day {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-left: 5px;
+    margin-right: 15px;
+    font-weight: 500;
+    font-size: 14px;
+
+}
+
+#search-box {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.cities {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    font-size: 14px;
+
+}
+
+.city-list {
+    padding-top: 5px;
+    font-weight: 500;
+    margin-left: 5px;
+}
+
+/* UV Background Values */
+.uvLow {
+    background-color: green;
+}
+
+.uvModerate {
+    background-color: yellow;
+}
+
+.uvHigh {
+    background-color: red;
+}
+
+.uvExtreme {
+    background-color: purple;
+    color: white;
+}
