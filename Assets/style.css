@@ -57,6 +57,11 @@ header {
     margin-left: 5px;
 }
 
+.city-list:hover {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
 /* UV Background Values */
 .uvLow {
     background-color: green;
