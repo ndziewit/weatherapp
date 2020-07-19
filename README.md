@@ -5,6 +5,7 @@ Searched cities are stored in a list to the left and weather can be recalled by 
 When the user closes the webpage and reopens, the last searched city's weather will automatically populate the page.
 
 https://github.com/ndziewit/weatherapp/
+
 https://ndziewit.github.io/weatherapp/
 
 <img width="600" alt="Screen Shot 2020-07-02 at 11 25 20 PM" src="https://user-images.githubusercontent.com/64652517/86428682-5b023900-bcbb-11ea-9c67-2a9c4eed3a00.png">
